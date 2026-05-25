@@ -1,0 +1,17 @@
+{
+  "DocVersion": "1.0.0",
+  "StudioMinVersion": "2025.04.0",
+  "SolutionId": "b830f61e-d6a4-4280-a0b5-08deb3edbe45",
+  "Projects": [
+    {
+      "Type": "Agent",
+      "ProjectRelativePath": "DORA-Contract-Analyzer/project.uiproj",
+      "Id": "23947824-ef17-4765-9aa2-5174c9a4b71e"
+    },
+    {
+      "Type": "Process",
+      "ProjectRelativePath": "DORA-FrontOfficeRobot/project.uiproj",
+      "Id": "880a3899-45e7-4fc0-8f61-e31308700f60"
+    }
+  ]
+}

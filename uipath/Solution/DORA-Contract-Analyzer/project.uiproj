@@ -1,0 +1,6 @@
+{
+  "ProjectType": "Agent",
+  "Name": "DORA-Contract-Analyzer",
+  "Description": "Analyzes ICT third-party contracts against DORA Art. 28-30 requirements",
+  "MainFile": null
+}
