@@ -1,0 +1,49 @@
+SERVICELEVERANCEAFTALE
+Aftale nr. SLA-2024-117
+
+Mellem:
+Danske Forsikring & Pension A/S (herefter "kunden")
+CVR: 23456789
+Rådhuspladsen 45, 1550 København V
+
+og:
+
+GlobalTech Solutions Ltd. (herefter "leverandøren")
+Reg. nr. 98765432
+23 Tech Park, Dublin, Irland
+
+1. YDELSER
+Leverandøren leverer cloud-baserede dataanalysetjenester og ML-platforme til brug i kundens forsikringsaktiviteter.
+
+2. KONTRAKTPERIODE
+Aftalen løber fra 1. marts 2025 og er uopsigelig i 12 måneder.
+
+3. DATABEHANDLING
+Kundens data behandles i leverandørens datacenter. Leverandøren forbeholder sig ret til at anvende underentreprenører efter eget skøn uden forudgående orientering af kunden.
+
+4. SIKKERHED
+Leverandøren bestræber sig på at opretholde passende sikkerhedsniveauer i overensstemmelse med gældende bedste praksis.
+
+5. NEDETID OG SUPPORT
+Ved nedetid kontaktes support via ticket-system. Leverandøren tilstræber at løse kritiske fejl inden for rimelig tid. Der ydes support på hverdage 9-17 dansk tid.
+
+6. HÆNDELSESHÅNDTERING
+Ved sikkerhedshændelser underretter leverandøren kunden snarest muligt. Leverandøren er ikke forpligtet til at levere rodårsagsanalyser.
+
+7. AUDIT
+Kunden kan anmode om adgang til leverandørens sikkerhedsdokumentation. Leverandøren afgør selv hvilken dokumentation der udleveres og hvornår.
+
+8. OPSIGELSE
+Aftalen kan opsiges med 1 måneds varsel efter den uopsigelige periode. Ved opsigelse overfører leverandøren data til kunden i det format leverandøren finder hensigtsmæssigt. Data slettes fra leverandørens systemer på et tidspunkt efter leverandørens valg.
+
+9. ANSVARSBEGRÆNSNING
+Leverandørens samlede ansvar er begrænset til den seneste måneds fakturabeløb uanset årsag.
+
+10. LOVVALG
+Aftalen er underlagt irsk ret.
+
+Underskrevet den 1. februar 2025
+
+For Danske Forsikring & Pension A/S:    For GlobalTech Solutions Ltd.:
+_____________________________           _____________________________
+Søren Andersen, CTO                     Patrick O'Brien, CEO
