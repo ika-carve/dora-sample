@@ -122,7 +122,7 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ScanContracts" sap:VirtualizedContainerService.HintSize="1192,987.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ScanContracts" sap:VirtualizedContainerService.HintSize="1142,987.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="v_relativePath" />
     </Sequence.Variables>
@@ -131,7 +131,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[in_ContractFolder]" sap:VirtualizedContainerService.HintSize="484,613" sap2010:WorkflowViewState.IdRef="ForEachFileX_2" IncludeSubDirectories="True" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[in_ContractFolder]" sap:VirtualizedContainerService.HintSize="484,964" sap2010:WorkflowViewState.IdRef="ForEachFileX_2" IncludeSubDirectories="True" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
       <ui:ForEachFileX.Body>
         <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
           <ActivityAction.Argument1>
@@ -140,13 +140,26 @@
           <ActivityAction.Argument2>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
           </ActivityAction.Argument2>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,326" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,677" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ucas:UploadStorageFile FileResource="{x:Null}" TimeoutMS="{x:Null}" Destination="[v_relativePath]" DisplayName="Upload Storage File" FolderPath="[in_FolderPath]" sap:VirtualizedContainerService.HintSize="416,266" sap2010:WorkflowViewState.IdRef="UploadStorageFile_1" Path="[iterFile.ToString()]" StorageBucketName="[in_BucketName]" />
+            <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[v_relativePath]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[in_ContractId + "/" + System.IO.Path.GetFileName(iterFile.ToString())]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ucas:UploadStorageFile FileResource="{x:Null}" TimeoutMS="{x:Null}" Destination="[v_relativePath]" DisplayName="Upload Storage File" FolderPath="[in_FolderPath]" sap:VirtualizedContainerService.HintSize="416,275" sap2010:WorkflowViewState.IdRef="UploadStorageFile_1" Path="[iterFile.ToString()]" StorageBucketName="[in_BucketName]" />
+            <ui:AddQueueItem TimeoutMS="{x:Null}" DisplayName="Add Queue Item" sap:VirtualizedContainerService.HintSize="416,167" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="dora-ingestion">
+              <ui:AddQueueItem.ItemInformation>
+                <InArgument x:TypeArguments="x:String" x:Key="ContractId">[in_ContractId]</InArgument>
+              </ui:AddQueueItem.ItemInformation>
+            </ui:AddQueueItem>
           </Sequence>
         </ActivityAction>
       </ui:ForEachFileX.Body>

@@ -1,1 +1,64 @@
-{"name":"DORA-FrontOfficeRobot","projectId":"ea67304d-71e3-4574-8c09-79f8d400a525","description":"Blank Process","main":"Main.xaml","dependencies":{"UiPath.Excel.Activities":"[3.5.1]","UiPath.Mail.Activities":"[2.8.10]","UiPath.PDF.Activities":"[3.25.2]","UiPath.System.Activities":"[25.10.5]","UiPath.Testing.Activities":"[25.10.2]","UiPath.UIAutomation.Activities":"[25.10.31]","UiPath.WebAPI.Activities":"[2.4.0]","UiPath.Word.Activities":"[2.5.1]"},"webServices":[],"entitiesStores":[],"schemaVersion":"4.0","studioVersion":"25.10.11.0","projectVersion":"1.0.1","runtimeOptions":{"autoDispose":false,"netFrameworkLazyLoading":false,"isPausable":true,"isAttended":false,"requiresUserInteraction":true,"supportsPersistence":false,"workflowSerialization":"NewtonsoftJson","excludedLoggedData":["Private:*","*password*"],"executionType":"Workflow","readyForPiP":false,"startsInPiP":false,"mustRestoreAllDependencies":true,"pipType":"ChildSession"},"designOptions":{"projectProfile":"Developement","outputType":"Process","libraryOptions":{"privateWorkflows":[]},"processOptions":{"ignoredFiles":[]},"fileInfoCollection":[],"saveToCloud":false},"expressionLanguage":"VisualBasic","entryPoints":[{"filePath":"Main.xaml","uniqueId":"4f37329d-2a3f-4377-80f7-ace083773c01","input":[],"output":[]}],"isTemplate":false,"templateProjectData":{},"publishData":{},"targetFramework":"Windows"}
+{
+  "name": "DORA-FrontOfficeRobot",
+  "projectId": "ea67304d-71e3-4574-8c09-79f8d400a525",
+  "description": "Blank Process",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[3.5.1]",
+    "UiPath.Mail.Activities": "[2.8.10]",
+    "UiPath.PDF.Activities": "[3.25.2]",
+    "UiPath.System.Activities": "[25.10.5]",
+    "UiPath.Testing.Activities": "[25.10.2]",
+    "UiPath.UIAutomation.Activities": "[25.10.31]",
+    "UiPath.WebAPI.Activities": "[2.4.0]",
+    "UiPath.Word.Activities": "[2.5.1]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.10.11.0",
+  "projectVersion": "1.0.1",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "4f37329d-2a3f-4377-80f7-ace083773c01",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

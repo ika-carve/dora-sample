@@ -9,16 +9,24 @@
         "type": "object",
         "properties": {
           "in_ContractId": {
-            "type": "string"
+            "type": "string",
+            "x-default-expression": "\"sample-001\"",
+            "default": "sample-001"
           },
           "in_ContractFolder": {
-            "type": "string"
+            "type": "string",
+            "x-default-expression": "\"C:\\Users\\ib.IBSTATIONAER\\OneDrive - Carve Consulting\\Source\\dora-sample\\contracts\\sample-001\"",
+            "default": "C:\\Users\\ib.IBSTATIONAER\\OneDrive - Carve Consulting\\Source\\dora-sample\\contracts\\sample-001"
           },
           "in_folderPath": {
-            "type": "string"
+            "type": "string",
+            "x-default-expression": "\"Shared\"",
+            "default": "Shared"
           },
           "in_BucketName": {
-            "type": "string"
+            "type": "string",
+            "x-default-expression": "\"dora-contracts\"",
+            "default": "dora-contracts"
           }
         },
         "required": []
