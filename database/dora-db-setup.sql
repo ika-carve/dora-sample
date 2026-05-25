@@ -70,6 +70,9 @@ CREATE TABLE IF NOT EXISTS dora.contract_files (
     indexed_at      TIMESTAMPTZ,
     -- Opdateres hver gang robotten ser filen (ogsaa uden aendring)
     last_seen_at    TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    -- OCR-haandtering (fase 2)
+    needs_ocr       BOOLEAN     NOT NULL DEFAULT FALSE,
+    ocr_completed_at TIMESTAMPTZ,
 
     PRIMARY KEY (contract_id, file_path)
 );
